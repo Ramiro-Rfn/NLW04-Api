@@ -9,5 +9,5 @@ app.get('/', (request, response)=>{
 });
 
 app.listen(3333,()=>{
-    console.log("Server started in localhost:3434");
+    console.log("Server started in localhost:3333");
 });
