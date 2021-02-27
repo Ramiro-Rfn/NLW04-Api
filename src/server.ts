@@ -1,12 +1,15 @@
 import express from 'express';
 import 'reflect-metadata';
+import './database';
+import { routes } from './routes';
 
 const app = express();
-import './database';
 
-app.get('/', (request, response)=>{
-    response.json({message: 'Hello NLW04'});
-});
+app.use(express.json())
+
+app.use(routes);
+
+
 
 app.listen(3333,()=>{
     console.log("Server started in localhost:3333");
