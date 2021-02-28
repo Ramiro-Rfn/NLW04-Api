@@ -3,7 +3,7 @@ import { v4 as uuid } from 'uuid';
 
 
 @Entity('Surveys')
-class Servey{
+class Survey{
     @PrimaryColumn()
     readonly id: string;
 
@@ -23,4 +23,4 @@ class Servey{
     }
 }
 
-export {Servey};
+export {Survey};
